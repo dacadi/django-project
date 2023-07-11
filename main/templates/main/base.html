@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}" type="text/css" />
+    <link rel="shortcut icon" href="{% static 'main/images/logo.png' %}" type="image/x-icon" />
+    <title>СтудКлуб</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo">
+        <img class="img_logo" src="{% static 'main/images/logo1.png' %}" alt="Логотип">
+      </a>
+      <nav class="header__menu">
+        <ul>{% for el in menu %}
+              <li>
+                <a href="{% url el.url_name %}">{{ el.title }}</a>
+              </li>
+            {% endfor %}
+        </ul>
+      </nav>
+        {% if user != 'there is no user' %}
+        <div class="name"> <a href="{% url 'profile' %}">{{ user.first_name}}</a>
+         <button type="button" class="sign_up" onClick="window.location.href = '{% url 'logout' %}'">Выйти</button>
+        </div>
+            {% else %}
+        <div>
+        <button type="button" class="sign_up" onClick="window.location.href = '{% url 'autorisation' %}'">Вход</button>
+          <button  type="button" class="sign_in" onClick="window.location.href = '{% url 'registration' %}'">Регистрация</button>
+        </div>
+        {% endif %}
+    </div>
+  </div>
+</header>
+{% block content %} {% endblock %}
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted" style="color: white; font-family:Guerrilla">© 2022 Company, Inc</span>
+    </div>
+  </footer>
+</div>
+<script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+

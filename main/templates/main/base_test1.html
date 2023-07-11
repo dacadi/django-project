@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="{% static 'main/images/logo.png' %}" type="image/x-icon" />
+  <link rel="stylesheet" href="{% static 'main/css/styles.css' %}" type="text/css" />
+
+</head>
+<body class="bg-white">
+  <nav class="py-2 bg-dark border-bottom body">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li ><a href="/events" class="nav-link link-dark px-2" aria-current="page">Мероприятия</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">О нас</a></li>
+        <li class="nav-item"><a href="/archive" class="nav-link link-dark px-2 yellow">Архив</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 yellow">Магазин</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 yellow">About</a></li>
+      </ul>
+      <ul class="nav bg-dark">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 yellow">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 yellow">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center bd-dark">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Double header</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+        <input type="search" class="form-control search" placeholder="Поиск..." aria-label="Search">
+      </form>
+    </div>
+  </header>
+</header>
+{% block content %} {% endblock %}
+</body>
+</html>

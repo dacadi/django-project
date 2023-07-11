@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}" type="text/css" />
+    <link rel="shortcut icon" href="{% static 'main/images/logo.png' %}" type="image/x-icon" />
+    <title>СтудКлуб</title>
+</head>
+<body background="white">
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo">
+        <img class="img_logo" src="{% static 'main/images/logo1.png' %}" alt="Логотип">
+      </a>
+      <div>
+        <button type="button" class="sign_up" onClick="window.location.href = '{% url 'autorisation' %}'">Вход</button>
+      </div>
+    </div>
+  </div>
+</header>
+<h1 class="registration">Регистрация</h1>
+    <form action="" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="submit">Регистрация</button>
+    </form>
+</body>
+</html>

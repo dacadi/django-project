@@ -1,0 +1,94 @@
+body {
+ background-color: #000;
+}
+
+.header {
+  padding: 12px 0;
+  color: #0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header__menu > ul > li {
+  margin-left: 24px;
+}
+
+.header__menu ul > li > a{
+  text-decoration: none;
+  color: #79d4c6;
+  font-family: 'Guerrilla';
+}
+
+.header__menu ul > li > a:hover{
+  text-decoration: none;
+  color: #47837A;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  font-family: 'Guerrilla';
+}
+
+label {
+  position: relative;
+  display: block;
+  height: 40px;
+  flex: 0 0 300px
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px 0 40px;
+  font-size: 16px;
+}
+
+
+svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.img_logo{
+  width: 49px;
+  height: 50px;
+}
+
+@font-face {
+	font-family: 'Guerrilla';
+	src: local('Guerrilla'),
+		url(/fonts/Guerrilla.ttf);
+}
+
+/*
+.button {
+
+}
+
+.button .sign_up{
+
+}
+.sign_in:hover{
+
+}
+
+.button .sign_in{
+
+}*//*
+

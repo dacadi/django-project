@@ -1,0 +1,12 @@
+{% extends 'main/base_test.html' %}
+{% block content %}
+<main class="context">
+<h1> {{ title }} </h1>
+    {% for el in years %}
+        <div class="alert alert-warning mt-2">
+            <h3> {{ el.period }}</h3>
+            <p> {{ el.url_video }} </p>
+        </div>
+</main>
+{% endfor %}
+{% endblock %}

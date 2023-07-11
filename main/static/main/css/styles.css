@@ -1,0 +1,306 @@
+@font-face {
+	font-family: 'Guerrilla';
+	src: local('Guerrilla'),
+		url(static/main/fonts/Guerrilla.ttf);
+}
+
+body {
+ background-color: #0B0A0D;
+}
+
+
+/* Хэддер */
+.header {
+  padding: 12px 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #79d4c6;
+    font-family: 'Guerrilla';
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.name a {
+    font-size: 20px;
+    color: #F4F2A8;
+    font-family: Guerrilla;
+    text-emphasis-style: none;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1{
+    color: yellow;
+}
+
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header__menu > ul > li {
+  margin-left: 24px;
+}
+
+.header__menu ul > li > a{
+  text-decoration: none;
+  color: #79d4c6;
+  font-family: 'Guerrilla';
+}
+.header__menu ul > li > a:hover{
+  text-decoration: none;
+  color: #47837A;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  font-family: 'Guerrilla';
+}
+.header__menu ul > li > a:focus{}
+
+label {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    color: #BDDFDA;
+    font-family: Guerrilla;
+}
+
+
+svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.img_logo{
+  width: 70x;
+  height: 70.11px;
+}
+
+
+/* Кнопки */
+
+button{
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  margin: 3px;
+  color: #0;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.submit{
+  background: #FEFB7C;
+  font-family: 'Guerrilla';
+    height: 45px;
+    width: 420px;
+}
+
+.submit:hover {
+  font-weight: bold;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  box-shadow: 0 0 0 1px #FFF800;
+}
+
+.sign_up{
+  background: #F4F2A8;
+  font-family: 'Guerrilla';
+}
+
+.sign_up:hover {
+  font-weight: bold;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  box-shadow: 0 0 0 1px #F4F2A8;
+}
+
+.sign_up:focus {
+}
+
+.sign_up a{
+  text-decoration: none;
+  color: black;
+}
+
+.sign_up_ev{
+  background: #F4F2A8;
+  font-family: 'Guerrilla';
+  margin-left: 50px;
+  padding: 16px 16px;
+}
+
+.sign_up_ev:hover {
+  font-weight: bold;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  box-shadow: 0 0 0 1px #F4F2A8;
+}
+
+.sign_up_ev:focus {
+}
+
+.sign_in{
+  background: #F4F2A8;
+  font-family: 'Guerrilla';
+}
+
+.sign_in:hover {
+  font-weight: bold;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  box-shadow: 0 0 0 1px #F4F2A8;
+}
+
+.sign_in:focus {
+}
+
+.sign_in a{
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN  */
+
+.main {
+  padding: 3px 0;
+}
+
+.main > .container {
+  max-width: 1024px;
+  margin: 0 auto;
+      align-items: center;
+}
+
+.container > ul > li {
+  margin-left: 24px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+
+.registration {
+    color: #79d4c6;
+    font-family: 'Guerrilla';
+    text-align: center;
+    font-size: 45px;
+}
+
+ul> li {
+    color: #2C2C2C;
+    list-style: none;
+    font-family: Guerrilla;
+    text-align: center;
+}
+
+.reg{
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 3rem;
+  color: #0;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #F4F2A8;
+  font-family: 'Guerrilla';
+}
+
+.reg:hover{
+  font-weight: bold;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  box-shadow: 0 0 0 1px #F4F2A8;
+}
+form {text-align:center;}
+
+
+input {
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+    padding: 4px 4px 4px 4px;
+    text-align: left;
+    background: #2C2C2C;
+    color: white;
+    border-radius: 5px;
+    font-family: "Calibri";
+    margin-block-start: auto;
+}
+
+select{
+    width: 450px;
+    margin-left: 32%;
+    padding: 10px 20px 10px 30px;
+    text-align: center;
+    background: #2C2C2C;
+    color: white;
+    border-radius: 5px;
+    font-family: "Calibri";
+    text-decoration: bold;
+    margin-block-start: auto;
+}
+
+.helptext{
+    color: black;
+    margin-left: 0px;
+    font-size: 0px;
+}
+
+.events li{
+display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #79d4c6;
+    font-family: 'Guerrilla';
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: left}
+
+.smth{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #79d4c6;
+    font-family: 'Guerrilla';
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+.smth_text {
+    font-family: 'Guerrilla';
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.smth_form {
+    font-family: 'Guerrilla';
+    margin-left: 10%;
+    font-size: 20px;
+}
+.nameProfile{
+
+}

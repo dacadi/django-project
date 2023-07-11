@@ -1,0 +1,7 @@
+{% extends 'main/base.html' %}
+{% block content %}
+    <p class="registration">Мой профиль</p><br>
+<div class="smth"> <p class="smth_text">id:  <span style="color: #96FFF8;"> {{ user.pk }} </span> </p> </div>
+<div class="smth"> <p class="smth_text">Имя пользователя: <span style="color: #96FFF8;">  {{ first_name }} </span> </p> </div>
+<div class="smth"> <p class="smth_text">Email: <span style="color: #96FFF8;">  {{ user.email }}  </span></p> </div>
+{% endblock %}

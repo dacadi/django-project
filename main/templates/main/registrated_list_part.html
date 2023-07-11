@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<main class="context">
+<h1> {{ event }} </h1>
+    {% for el in part %}
+        <div>
+            <h1> {{ el.id_guest.guest_name }} {{ el.id_guest._surname }}</h1><br>
+        </div>
+    {% endfor %}
+</main>
+{% endblock %}
